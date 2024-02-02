@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .elem{
+            box-sizing: border-box;
+            width: 500px;
+            height: auto;
+            border: 2px solid black;
+            text-align: justify;
+            padding: 15px;
+            margin: 10px;
+        }
+        .container{
+            display: flex;
+        }
+        .block{
+            width: 20%;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        span{
+            color: red;
+            background-color: yellow;
+        }
+        P::first-line{
+            color: red;
+            font-size: 20px;
+            background-color: yellow;
+        }
+        p::first-letter{
+            display: inline-block;
+            color: greenyellow;
+            /* font-size: 2em bold; */
+            border:2px violet solid;
+            padding: 3px;
+            margin: 3px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+        }
+        p::selection{
+            color: tomato;
+            background-color: aquamarine;
+            font:2rem bold;
+        }
+        .container :first-child{
+            background-color: aquamarine;
+        }
+        /* .container div:last-child{
+            background-color: bisque;
+        }
+        .container div:nth-child(2){
+            background-color: green;
+
+        } */
+        .container2 p:nth-of-type(3n){
+            background-color: rgb(61, 73, 36);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="elem"><p><span>Lorem ipsum dolor</span> sit amet, consectetur adipisicing elit. Perspiciatis ducimus nulla officiis ex, excepturi quia aspernatur provident eligendi qui porro. Nobis nemo nostrum id ea! Commodi libero expedita minus nobis sint nesciunt omnis tempore fugiat aperiam, consequuntur veritatis ex rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni optio nesciunt animi dolores aspernatur culpa natus, omnis, similique voluptatum atque quam, molestias possimus deserunt sit voluptas quidem iusto ab!</p></div>
+    <div class="container">
+        <div class="block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla officiis ducimus! Velit eaque inventore nostrum accusamus esse, laboriosam non quo impedit! Odit, ipsam. Eaque obcaecati quisquam veniam ea velit.</p>
+        </div>
+        <div class="block">
+            <p>Nostrum nihil eos, blanditiis, nemo fuga reiciendis quae, labore aspernatur delectus dolore quod quisquam sed. Accusantium distinctio dolorum eius blanditiis sint a iusto maiores, doloremque pariatur, hic beatae aspernatur quod.</p>
+        </div>
+        <div class="block">
+            <p>Magni delectus assumenda facere maxime iusto culpa dolor iure nemo nisi, earum numquam! Deserunt ipsum, quis nostrum explicabo aut esse amet fugit provident quibusdam, quia assumenda culpa ad. Esse, dolores?</p>
+        </div>
+    </div>
+    <div class="container2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolores totam possimus autem odio officiis?</p>
+        <p>Hic, id, repellendus laboriosam tempore enim ullam voluptate expedita quidem obcaecati cumque, amet saepe qui.</p>
+        <p>Asperiores, amet, perspiciatis ut quaerat suscipit quod ea neque excepturi beatae voluptatum voluptatem. Dignissimos, deserunt!</p>
+        <p>Tempore, est libero consectetur nemo rem doloribus aspernatur in dolorum sed neque dicta recusandae minus.</p>
+        <p>Cupiditate, itaque ullam error aspernatur aut voluptates tempora quod impedit ea! Cumque officiis suscipit placeat.</p>
+        <p>Sit blanditiis, libero voluptas quis ipsa est molestias, velit laudantium quia numquam voluptate accusantium illo!</p>
+        <p>Suscipit repellat, est hic, obcaecati accusantium illum cupiditate voluptas nam modi quos, fugiat iste eligendi?</p>
+        <p>Accusamus consectetur eum, repellat neque tempora autem quasi voluptatibus tenetur, ducimus debitis aperiam assumenda cupiditate?</p>
+        <p>Voluptates vitae veniam cum ad tempora sunt? Consequatur, blanditiis. Eum eaque impedit at ea neque.</p>
+        <p>Voluptas impedit, accusantium suscipit amet similique tempore quia eveniet! Molestias veniam illo impedit officiis rem.</p>
+    </div>
+</body>
+</html>
